@@ -1,1 +1,27 @@
-Thers is a index for you
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello Customer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/customcss.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/customscript.js"></script>
+</head>
+<body>
+<section>
+	<div class="container-box">
+		<div id="item-boxs" class="grid-3">
+			
+		</div>
+	</div>
+</section>
+<script>
+	var result  = "";
+	var itemBox = document.getElementById('item-boxs');
+	result += "<div class='innerbox'>";
+	result += "</div>";
+	itemBox.innerHTML = result;
+</script>
+</body>
+</html>
