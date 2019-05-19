@@ -277,3 +277,16 @@ ul {
 	}
 }
 
+/* */
+.innerbox {
+	width: 100%;
+	height: auto;
+	padding: 150px 0;
+	background: #ed4545;
+}
+.innerbox code {
+	display: flex;
+	justify-content: center;
+	font-size: 3em;
+	color: #fff;
+}
