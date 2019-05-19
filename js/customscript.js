@@ -21,3 +21,15 @@ function link_list_active(naviclas, activeName, deactiveName, linkslah, cssStyle
 	});
 }
 link_list_active(".mainmenu a, .footermenulists a", 'menuActive',"menudeactive", ".mainmenu a", "color: #dc2525;font-weight: 600");
+
+function boxscount(count) {
+	var result  = "";
+	var itemBox = document.getElementById('item-boxs');
+	for(var i  = 1; i <= count; i++) {
+		result += "<div class='innerbox'>";
+		result += "<code>" + i + "</code>";
+		result += "</div>";		
+	} 
+
+	itemBox.innerHTML = result;		
+}
