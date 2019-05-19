@@ -1,0 +1,279 @@
+:root {
+	--blue: #007bff;
+	--indigo: #6610f2;
+	--purple: #6f42c1;
+	--pink: #e83e8c;
+	--red: #dc3545;
+	--orange: #fd7e14;
+	--yellow: #ffc107;
+	--green: #28a745;
+	--teal: #20c997;
+	--cyan: #17a2b8;
+	--white: #fff;
+	--gray: #6c757d;
+	--gray-dark: #343a40;
+	--primary: #007bff;
+	--secondary: #6c757d;
+	--success: #28a745;
+	--info: #17a2b8;
+	--warning: #ffc107;
+	--danger: #dc3545;
+	--light: #f8f9fa;
+	--dark: #343a40;
+	--breakpoint-xs: 0;
+	--breakpoint-sm: 576px;
+	--breakpoint-md: 768px;
+	--breakpoint-lg: 992px;
+	--breakpoint-xl: 1200px;
+	--font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+* {
+	margin: 0; 
+	padding: 0;
+	border: 0;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: sans-serif;
+	line-height: 1.15;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-ms-overflow-style: scrollbar;
+	-webkit-tap-highlight-color: transparent;
+}
+
+@-ms-viewport {
+	width: device-width;
+}
+
+article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
+	display: block;
+
+}
+article, header, footer, main, section {
+	display: block;
+	clear: both;
+	width: 100%;
+	height: auto;
+	padding: 30px 0;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+h1, .h1 {
+  font-size: 2.5rem;
+}
+
+h2, .h2 {
+  font-size: 2rem;
+}
+
+h3, .h3 {
+  font-size: 1.75rem;
+}
+
+h4, .h4 {
+  font-size: 1.5rem;
+}
+
+h5, .h5 {
+  font-size: 1.25rem;
+}
+
+h6, .h6 {
+  font-size: 1rem;
+}
+ul {
+	list-style: none;
+}
+.container-box {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+@media (min-width: 576px) {
+	.container-box {
+		max-width: 540px;
+	}
+}
+
+@media (min-width: 768px) {
+	.container-box {
+		max-width: 720px;
+	}
+}
+
+@media (min-width: 992px) {
+	.container-box {
+		max-width: 960px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container-box {
+		max-width: 1140px;
+	}
+}
+
+.container-box-fluid {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.grid-1, .grid-2, .grid-3, .grid-4, .grid-5 {
+	display: grid;
+	grid-gap: 1em;
+}
+.grid-m-auto {
+	margin: auto;
+}
+.grid-mt-auto {
+	margin-top: auto;
+}
+.grid-ml-auto {
+	margin-left: auto;
+}
+.grid-mb-auto {
+	margin-bottom: auto;
+}
+.grid-mr-auto {
+	margin-right: auto;
+}
+.grid-m-1 {
+	margin: 10px;
+}
+.grid-m-2 {
+	margin: 20px;
+}
+.grid-m-3 {
+	margin: 30px;
+}
+.grid-m-4 {
+	margin: 40px;
+}
+.grid-m-5 {
+	margin: 50px;
+}
+/* Start There is a margin top panel */
+.grid-mt-1 {
+	margin-top: 10px;
+}
+.grid-mt-2 {
+	margin-top: 20px;
+}
+.grid-mt-3 {
+	margin-top: 30px;
+}
+.grid-mt-4 {
+	margin-top: 40px;
+}
+.grid-mt-5 {
+	margin-top: 50px;
+}
+/* End margin top panel */
+
+/* Start There is a margin left panel */
+.grid-ml-1 {
+	margin-left: 10px;
+}
+.grid-ml-2 {
+	margin-left: 20px;
+}
+.grid-ml-3 {
+	margin-left: 30px;
+}
+.grid-ml-4 {
+	margin-left: 40px;
+}
+.grid-ml-5 {
+	margin-left: 50px;
+}
+/* End margin left panel */
+
+/* Start There is a margin bottom panel */
+.grid-mb-1 {
+	margin-bottom: 10px;
+}
+.grid-mb-2 {
+	margin-bottom: 20px;
+}
+.grid-mb-3 {
+	margin-bottom: 30px;
+}
+.grid-mb-4 {
+	margin-bottom: 40px;
+}
+.grid-mb-5 {
+	margin-bottom: 50px;
+}
+/* Start There is a margin right panel */
+.grid-mr-1 {
+	margin-right: 10px;
+}
+.grid-mr-2 {
+	margin-right: 20px;
+}
+.grid-mr-3 {
+	margin-right: 30px;
+}
+.grid-mr-4 {
+	margin-right: 40px;
+}
+.grid-mr-5 {
+	margin-right: 50px;
+}
+
+.grid-1 {
+	grid-template-columns: repeat(1,100%);
+}
+@media screen and (min-width: 600px) {
+	.grid-2 {
+		grid-template-columns: repeat(2,50%);	
+	}	
+}
+@media screen and (min-width: 768px) {
+	.grid-3 {
+		grid-template-columns: repeat(3,33.3%);	
+	}
+}
+@media screen and (min-width: 992px) {
+	.grid-4 {
+		grid-template-columns: repeat(4,25%);	
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.grid-5 {
+		grid-template-columns: repeat(5,20%);	
+	}
+}
+
